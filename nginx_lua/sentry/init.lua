@@ -1,12 +1,7 @@
 local raven = require "raven"
 
 function init()
-
     --   http://pub:secret@127.0.0.1:8080/sentry/proj-id
-
-    -- http://092b2e429b4c480e83c2e7f18890b8f2@127.0.0.1:9000/2
-    --  http://092b2e429b4c480e83c2e7f18890b8f2:e41f2a264e5e47329d0026e99ae825b1@10.6.253.14:9000/2
-
 local rvn = raven:new("http://092b2e429b4c480e83c2e7f18890b8f2:e41f2a264e5e47329d0026e99ae825b1@web:9000/2", {
     tags = { foo = "bar" },
  })
